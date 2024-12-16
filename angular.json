@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "app-pizza": {
+      "cli": {
+        "analytics": false
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -103,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
