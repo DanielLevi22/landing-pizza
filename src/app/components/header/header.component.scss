@@ -1,10 +1,14 @@
 :host {
   .container {
+    .logo {
+      font-size: 3.375rem;
+    }
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    font-family: "Brown Falco", sans-serif;
   }
 
   .container-nav {
@@ -14,7 +18,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      gap: 50px;
+      li {
+        font-size: 1.5rem;
+      }
     }
   }
 }

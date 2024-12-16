@@ -1,1 +1,8 @@
 @import "./styles/_reset/index.scss";
+@import "./styles/_fonts/index.scss";
+
+body {
+  font-family: "Avenir", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
