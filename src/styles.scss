@@ -1,5 +1,34 @@
-@import "./styles/_reset/index.scss";
-@import "./styles/_fonts/index.scss";
+@use "./styles/_reset/index.scss" as reset;
+@use "./styles/_fonts/index.scss" as fonts;
+@use "./styles/variables/index.scss" as variables;
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to bottom,
+    white 0px,
+    white 100px,
+    #f0f0f0 100px,
+    var(--secondary-color) 100%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
 
 body {
   font-family: "Avenir", sans-serif;
