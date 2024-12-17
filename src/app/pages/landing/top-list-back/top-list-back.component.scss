@@ -1,0 +1,79 @@
+:host {
+  .container-section {
+    background-color: var(--secondary-color);
+    position: relative;
+  }
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-family: "Brown Falco";
+      position: relative;
+    }
+    p {
+      color: var(--secondary-text-color);
+    }
+  }
+  .alho {
+    position: absolute;
+    right: -80%;
+    top: 5%;
+    width: 150px;
+  }
+  .aspas {
+    position: absolute;
+    right: -45%;
+    top: 0;
+  }
+  .laranja {
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: rotate(180deg);
+    width: 80px;
+  }
+  .elipse {
+    position: absolute;
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .rectangle {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+    bottom: 5%;
+  }
+
+  .tomate {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+  }
+  .folha {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+  .container-card-top-list {
+    margin: 100px auto 0;
+    max-width: 1182px;
+  }
+
+  .linha-1 {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+  }
+  .linha-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+}
