@@ -4,7 +4,12 @@
     background-color: var(--secondary-color);
     width: 100%;
   }
-
+  .icon-rectangle {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 200px;
+  }
   .icon-tomate {
     position: absolute;
     top: 10px;
@@ -26,6 +31,8 @@
     gap: 40px;
     padding: 0 20px;
     h1 {
+      position: relative;
+      z-index: 1;
       font-size: 2.5rem;
       text-align: center;
       font-weight: 600;
@@ -42,19 +49,19 @@
       cursor: pointer;
       border-radius: 24px;
     }
-    .icon-pimenta {
-      position: absolute;
-      bottom: 50px;
-      left: 0;
-      z-index: 10;
-      width: 120px;
-      transform: rotate(30deg);
-    }
+
     .icon-alho {
       position: absolute;
       right: -50px;
       z-index: 10;
       width: 120px;
+    }
+    .icon-alho-2 {
+      position: absolute;
+      top: -50px;
+      width: 120px;
+      opacity: 0.9; /* Deixa o ícone mais transparente */
+      z-index: 0; /* Fica por trás do texto */
     }
   }
 
@@ -68,8 +75,43 @@
     }
   }
   .container-imgs {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .container-toca {
+    position: relative;
+  }
+
+  .toca {
+    position: absolute;
+    top: -50px;
+    right: -38px;
+    transform: rotate(5deg);
+    width: 220px;
+  }
+
+  .container-folha-arco {
+    position: relative;
+  }
+
+  .icon-pimenta {
+    position: absolute;
+    left: 165px;
+    top: -190px;
+    z-index: 10;
+    width: 126px;
+    transform: rotate(5deg);
+  }
+  .icon-folha {
+    position: absolute;
+    z-index: 10;
+  }
+  .arco {
+    position: absolute;
+    top: -255px;
+    left: 0;
   }
 }
