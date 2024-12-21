@@ -1,10 +1,77 @@
 :host {
   .container {
     background-color: #392e2d;
+    color: var(--white-color);
+    padding: 30px 32px 80px;
+
     width: 100%;
     border-radius: 8px;
+    max-width: 1242px;
+    margin: auto;
   }
-  .content {
+  .title {
     text-align: center;
+    font-size: 3rem;
+  }
+
+  .content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nutrition-info {
+    max-width: 400px;
+  }
+  .value {
+    font-size: 8rem;
+  }
+  .nutrition-imgs {
+    position: relative;
+    width: 271px;
+    height: 271px;
+  }
+
+  .prato-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+  }
+  .prato-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 335px;
+    transform: translate(-50%, -50%);
+
+    transition: transform 0.3s ease, height 0.3s ease;
+  }
+  .nutrition-imgs:hover .prato-1 {
+    z-index: 1;
+    transition: height 0.3s ease;
+  }
+  .nutrition-imgs:hover .prato-1 {
+    transform: translate(-50%, -50%) rotate(12deg);
+  }
+
+  .nutrition-imgs:hover .prato-2 {
+    transition: height 0.3s ease;
+  }
+  .nutrition-imgs:hover .prato-1 {
+    transform: translate(-50%, -50%) rotate(-12deg);
+  }
+
+  .readmore {
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 9999px;
+    color: #392e2d;
   }
 }
