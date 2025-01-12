@@ -1,8 +1,43 @@
 :host {
   .section-container {
+    max-width: 890px;
+    margin: 0 auto;
   }
   .container {
-    margin-top: 100px;
-    height: 1000px;
+    position: relative;
+    margin-top: 160px;
+  }
+
+  .laranja {
+    position: absolute;
+    top: -12.9%;
+    left: 50%;
+    transform: rotate(90deg);
+    width: 86px;
+  }
+
+  .container-2 {
+    margin-top: 64px;
+  }
+
+  .container-prato-1 {
+    display: flex;
+    gap: 100px;
+  }
+
+  .tomate-1 {
+    width: 50px;
+  }
+  .container-prato-2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .suco {
+    width: 400px;
+  }
+  .panqueca {
+    width: 400px;
   }
 }
